@@ -1,5 +1,5 @@
 #Imagem base
-FROM Python
+FROM python
 #Cria o Diretorio 
 WORKDIR /app
 #COPIA O ARQUIVO COM A LISTA DE DEPENDENCIAS NECESÁRIAS DO PROJ para .
