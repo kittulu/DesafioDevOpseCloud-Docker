@@ -1,5 +1,5 @@
 #Imagem base
-FROM python
+FROM python:3.13.0
 #Cria o Diretorio 
 WORKDIR /app
 #COPIA O ARQUIVO COM A LISTA DE DEPENDENCIAS NECESÁRIAS DO PROJ para .
@@ -17,4 +17,4 @@ CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
 
 #docker build -t [nome do proj] -f [arquivodockerfile] [diretorio]
 
-#docker build -t coversao-distancia -f Dockerfile .
+#docker build -t conversao-distancia -f Dockerfile .
